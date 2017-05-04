@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<!-- -->
+<link rel="stylesheet" href="decisions.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.6/handlebars.js"></script>
+
+
+<title></title>
+</head>
+<body>
+
+  <h1>MY EVERYDAY DECISIONS</h1>
+  <h2>Time Management to plan my everyday life</h2>
+
+  <div id="slideShow">
+    <img src="life.jpg" alt="what our life evolves around" class="slideShow" >
+    <img src="wakeup.jpg" alt="wake up" class="slideShow" >
+    <img src="travel.jpg" alt="travel" class="slideShow" >
+    <img src="work.jpg" alt="at work" class="slideShow" >
+    <img src="kids.jpg" alt="spending time with kids" class="slideShow" >
+    <img src="routine.jpg" alt="at work" class="slideShow" >
+    <img src="dinner.jpg" alt="prepare for dinner" class="slideShow" >
+  </div>
+
+  <div class="weekday">
+    <label id="days"><b>There are 24 hours in a day! </b></label><br>
+    <label id="days"><b>Insert time spent on each of these activities below</b><label><br><br>
+    <label id="week">Prepare for work:</label><input id="prepare" type="number" min="0"> in minutes<br>
+    <label id="week">Travel to work:</label><input id="work" type="number" min="0"> in minutes<br>
+    <label id="week">Do daily job:</label><input id="job" type="number" min="0"> in minutes<br>
+    <label id="week">Travel from work:</label><input id="working" type="number" min="0"> in minutes<br>
+    <label id="week">Prepare for dinner:</label><input id="dinner" type="number" min="0"> in minutes<br>
+    <label id="week">Spend time with loved ones:</label><input id="kids" type="number" min="0"> in minutes<br>
+    <label id="week">Time spent on sleep:</label><input id="sleep" type="number" min="0"> in minutes
+  </div>
+
+  <dv class="weekend">
+    <label><b>Total hours spent in activities:</b></label><textarea readonly rows="1" id="activity" type="number"></textarea><br>
+    <label><b>Hours in day:</b></label><textarea readonly rows="1" id="hours" type="number"></textarea><br>
+    <label><b>Remaining hours:</b></label><textarea readonly rows="1" id="remaining" type="number"></textarea><br>
+    <button class="calculate">Calculate</button>
+    <button class="clear">Clear Field</button>
+  </div>
+
+  <div class="display">
+    <textarea readonly rows="4" id="displayArea" type="text"></textarea><br>
+  </div>
+
+  <script src="decisions.js" charset="utf-8"></script>
+</body>
+</html>
