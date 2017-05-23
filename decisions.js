@@ -42,9 +42,9 @@ function addActivity () {
     var  sum = +prepare.value + +work.value + +job.value + +
       working.value + +dinner.value + +kids.value + +sleep.value;
     }
-    activity.innerHTML = sum;
+    activity.innerHTML = (sum / 60);
 
-    minutes = sum / 60;
+    minutes = (sum / 60);
 }
 
 //Function to clear all text fields.
